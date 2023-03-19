@@ -1,18 +1,23 @@
 package onliner.pageObjects;
 
 public enum CatalogItems {
-    ELECTRONICS("Электроника"), COMPUTERS_AND_NETWORKS("Компьютеры и сети"), APPLIANCES("Бытовая техника"),
-    CONSTRUCTION_AND_REPAIR("Стройка и реомнт"), HOUSE_AND_GARDEN("Дом и Сад"), AUTO_AND_MOTO("Авто и мото"),
-    BEAUTY_AND_SPORTS("Красота и спорт"), CHILDREN_AND_MOTHERS("Детям и мамам"), WORK_AND_OFFICE("Работа и офис"),
-    FOOD("Еда");
+    ELECTRONICS("1","Электроника"), COMPUTERS_AND_NETWORKS("2","Компьютеры и сети"), APPLIANCES("3","Бытовая техника"),
+    CONSTRUCTION_AND_REPAIR("4","Стройка и реомнт"), HOUSE_AND_GARDEN("5","Дом и Сад"), AUTO_AND_MOTO("6","Авто и мото"),
+    BEAUTY_AND_SPORTS("7","Красота и спорт"), CHILDREN_AND_MOTHERS("8","Детям");
     private String catalogItem;
+    private String itemId;
 
-    CatalogItems(String catalogItem) {
+    CatalogItems(String itemId, String catalogItem) {
+        this.itemId =itemId;
         this.catalogItem = catalogItem;
 
     }
 
     public String getCatalogItem() {
         return catalogItem;
+    }
+
+    public String getItemId() {
+        return itemId;
     }
 }

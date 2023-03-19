@@ -5,8 +5,12 @@ import org.openqa.selenium.By;
 
 public class ComputersAndNetworksPage {
     private static final String ITEM_PATTERN = "//div[@class='catalog-navigation-list__aside-title'] and contains(text(), '%s')]";
+
+    //div[@class='catalog-navigation-list__aside-title'][text()=' Комплектующие ']
+    ////div[@class='catalog-navigation-list__aside-title'] and contains(text(), '%s')]
+
     //   всплывающее окно (компьютеры и сети)
-    private static final String COMPUTERS_AND_NETWORKS = "//div[@class='catalog-navigation-list__aside-list'][3]";
+    private static final String COMPUTERS_AND_NETWORKS = "//li[@data-id=\"2\"]";
     //содержит текст названия
     //private static final String ITEM_TITLE = "//span[@class='catalog-navigation-list__dropdown-title']";
     //описание количество  и цена
@@ -21,6 +25,10 @@ public class ComputersAndNetworksPage {
 
     public void clickOnItem(ComputersAndNetworksItems item) {
         WebDriverRun.getDriver().findElement(By.xpath(String.format(ITEM_PATTERN, item.getComputerItems()))).click();
+    }
+
+    public String getPathComputersAndNetworks(){
+        return COMPUTERS_AND_NETWORKS;
     }
 
 }
