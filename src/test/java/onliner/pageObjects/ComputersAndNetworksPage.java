@@ -4,7 +4,7 @@ import onliner.utils.WebDriverRun;
 import org.openqa.selenium.By;
 
 public class ComputersAndNetworksPage {
-    private static final String ITEM_PATTERN = "//div[@class='catalog-navigation-list__aside-title'] [text() = '%s')]";
+    private static final String ITEM_PATTERN = "//div[@class='catalog-navigation-list__aside-title'] [text() = '%s']";
 
     //   всплывающее окно (компьютеры и сети)
     private static final String COMPUTERS_AND_NETWORKS = "//li[@data-id=\"2\"]";
