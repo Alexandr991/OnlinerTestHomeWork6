@@ -4,6 +4,7 @@ import onliner.pageObjects.CatalogItems;
 import onliner.pageObjects.CatalogPage;
 import onliner.pageObjects.MainPage;
 import onliner.utils.WebDriverRun;
+import org.apache.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class CatalogPageTest {
     private WebDriver driver;
     private MainPage mainPage;
-
+    private static final Logger log = Logger.getLogger(CatalogPageTest.class);
 
     @BeforeEach
     public void initDriver() {
@@ -25,6 +26,7 @@ public class CatalogPageTest {
         mainPage = new MainPage();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.get(mainPage.openMainPage());
+        log.info("Onliner.by main page opened ");
 
 
     }
@@ -33,6 +35,7 @@ public class CatalogPageTest {
     public void testMainPage() {
         CatalogPage catalogPage = new CatalogPage();
         driver.findElement(mainPage.openCatalog()).click();
+        log.info("Catalog opened ");
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         Assertions.assertAll(
@@ -45,12 +48,13 @@ public class CatalogPageTest {
                 () -> Assertions.assertTrue(catalogPage.isItemExists(CatalogItems.HOUSE_AND_GARDEN.getItemId())),
                 () -> Assertions.assertTrue(catalogPage.isItemExists(CatalogItems.CONSTRUCTION_AND_REPAIR.getItemId()))
         );
-
+        log.info("Assertion passed");
     }
 
     @AfterEach
     public void cleanUp() {
         WebDriverRun.closeDriver();
+        log.info("Browser closed");
     }
 
 
