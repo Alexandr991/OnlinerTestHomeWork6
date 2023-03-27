@@ -1,0 +1,28 @@
+2023-03-26 23:57:21 INFO  CatalogPageTest:29 - Onliner.by main page opened 
+2023-03-26 23:57:30 INFO  CatalogPageTest:38 - Catalog opened 
+2023-03-26 23:57:31 INFO  CatalogPageTest:51 - Assertion passed
+2023-03-26 23:57:31 INFO  CatalogPageTest:57 - Browser closed
+2023-03-26 23:57:51 INFO  ComputersAndNetworksPageTest:32 - Onliner.by main page opened 
+2023-03-26 23:58:00 INFO  ComputersAndNetworksPageTest:59 - Catalog opened
+2023-03-26 23:58:00 INFO  ComputersAndNetworksPageTest:62 - Accessories opened
+2023-03-26 23:58:01 INFO  ComputersAndNetworksPageTest:68 - Assertion passed
+2023-03-26 23:58:01 INFO  ComputersAndNetworksPageTest:128 - Browser closed
+2023-03-26 23:58:04 INFO  ComputersAndNetworksPageTest:32 - Onliner.by main page opened 
+2023-03-26 23:58:14 INFO  ComputersAndNetworksPageTest:112 - Catalog opened
+2023-03-26 23:58:14 INFO  ComputersAndNetworksPageTest:115 - Accessories opened
+2023-03-26 23:58:14 INFO  ComputersAndNetworksPageTest:128 - Browser closed
+2023-03-26 23:58:18 INFO  ComputersAndNetworksPageTest:32 - Onliner.by main page opened 
+2023-03-26 23:58:27 INFO  ComputersAndNetworksPageTest:40 - Catalog opened
+2023-03-26 23:58:27 INFO  ComputersAndNetworksPageTest:43 - Computers and networks opened
+2023-03-26 23:58:27 INFO  ComputersAndNetworksPageTest:51 - Assertion passed
+2023-03-26 23:58:27 INFO  ComputersAndNetworksPageTest:128 - Browser closed
+2023-03-26 23:58:31 INFO  ComputersAndNetworksPageTest:32 - Onliner.by main page opened 
+2023-03-26 23:58:40 INFO  ComputersAndNetworksPageTest:95 - Catalog opened
+2023-03-26 23:58:40 INFO  ComputersAndNetworksPageTest:98 - Accessories opened
+2023-03-26 23:58:40 INFO  ComputersAndNetworksPageTest:104 - Assertion passed
+2023-03-26 23:58:41 INFO  ComputersAndNetworksPageTest:128 - Browser closed
+2023-03-26 23:58:44 INFO  ComputersAndNetworksPageTest:32 - Onliner.by main page opened 
+2023-03-26 23:58:56 INFO  ComputersAndNetworksPageTest:78 - Catalog opened
+2023-03-26 23:58:56 INFO  ComputersAndNetworksPageTest:81 - Accessories opened
+2023-03-26 23:58:56 INFO  ComputersAndNetworksPageTest:87 - Assertion passed
+2023-03-26 23:58:57 INFO  ComputersAndNetworksPageTest:128 - Browser closed
